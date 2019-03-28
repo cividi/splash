@@ -1,6 +1,6 @@
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: white;
+  color: #999;
   font-family: "Helvetica","Arial",sans-serif;
 }
 
@@ -11,7 +11,8 @@ body {
 }
 
 #civicurbanisminput {
-  /*background-color: red;*/
+  background: black;
+  border-radius: 50px;
   margin: 0 auto;
   top: 30%;
   left: 50%;
@@ -23,10 +24,24 @@ body {
   width: 95%;
   max-width: 900px;
   height: 35%;
-  font-size: 20px;
   text-align: center;
   /* background: url("../img/Postcard-Web-BG.svg") center center no-repeat; */
   background-size: contain;
+}
+#civicurbanisminput:after { content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 0; border: 50px solid transparent; border-top-color: black; border-bottom: 0; border-left: 0; margin-left: -10px; margin-bottom: -50px; }
+
+h1 {
+  font-size: 6rem;
+  color: white;
+}
+
+textarea {
+  font-size: 3rem;
+  background: transparent;
+  color: white;
+  width: 98%;
+  border: none;
+  box-shadow: 0px 0px 50px black;
 }
 
 #civicurbanisminput input {
@@ -43,9 +58,13 @@ body {
 }
 
 #civicurbanisminput input#submit {
-  width: 150px;
+  width: 100%;
   border: 0;
-  font-size: 20px;
+  color: black;
+}
+#civicurbanisminput input#submit:hover {
+  font-weight: bold;
+  cursor: pointer;
 }
 
 #footer {
@@ -54,13 +73,13 @@ body {
   display: block;
   bottom: 15px;
   position: absolute;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 1.5em;
 }
 
 #footer a {
   text-decoration: none;
-  color: #ccc;
+  color: #555;
 }
 
 #footer a:hover {

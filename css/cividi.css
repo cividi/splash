@@ -51,6 +51,12 @@ b {
   padding: 4em;
   color: rgba(0,0,0,0.6);
 }
+.content img {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 1em;
+  width: 100%;
+}
 .invert {
   background: #543076;
   color: white;

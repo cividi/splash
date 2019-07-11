@@ -1,7 +1,19 @@
 body {
   background-color: white;
-  color: #999;
   font-family: 'Open Sans',"Helvetica","Arial",sans-serif;
+}
+
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Zilla Slab', serif;
+}
+h2 {
+  font-size: 2em;
+  color: #261300;
+  text-align: left;
+  line-height: 125%;
 }
 
 #logo {
@@ -52,6 +64,7 @@ b {
 .content {
   padding: 4em;
   color: rgba(0,0,0,0.6);
+  hyphens: auto;
 }
 .content img {
   border-top: 1px solid #aaa;
@@ -71,6 +84,9 @@ b {
   text-shadow: 1px 1px 1px black;
   padding: 2em;
   margin: 0 -2em;
+}
+.content h2 {
+  hyphens: none;
 }
 .content h3 {
   padding: 1em;
@@ -95,17 +111,6 @@ b {
 }
 #welcome .title h2 {
   color: rgba(0,0,0,1);
-}
-h2 {
-  font-size: 2em;
-  color: #261300;
-  text-align: left;
-  line-height: 125%;
-}
-h1, h2, h3 {
-  margin: 0;
-  padding: 0;
-  font-family: 'Zilla Slab', serif;
 }
 
 .team {
@@ -163,10 +168,12 @@ h1, h2, h3 {
   border-radius: 50px;
   margin: 0 auto;
 }
-#civicurbanisminput:after { content: ''; position: absolute;
-  z-index: -1; left: 50%; width: 0; height: 0; border: 50px solid transparent; border-top-color: black; border-bottom: 0; border-left: 0; margin-left: -10px; margin-bottom: -50px; }
+#civicurbanisminput:after {
+  content: ''; position: absolute;
+  z-index: -1; left: 50%; width: 0; height: 0; border: 50px solid transparent; border-top-color: black; border-bottom: 0; border-left: 0; margin-left: -10px; margin-bottom: -50px;
+}
 #speechbubble h1 {
-  font-family: 'Helvetica', sans-sans-serif;
+  font-family: 'Helvetica', sans-serif;
   position: absolute;
   font-size: 6rem;
   margin-top: -0.8em;
@@ -219,12 +226,10 @@ textarea {
   font-size: 1rem;
   line-height: 1.5em;
 }
-
 #footer a {
   text-decoration: none;
   color: #555;
 }
-
 #footer a:hover {
   color: #fff;
 }
@@ -242,7 +247,6 @@ textarea {
     padding:1em;
   }
   h1 {
-    margin-top: -1.5em;
     font-size: 4rem;
   }
   body {
@@ -272,6 +276,10 @@ textarea {
   }
   #civicurbanisminput:after {
     bottom: 1px;
+  }
+  #speechbubble h1 {
+    font-size: 3em;
+    overflow: hidden;
   }
   #speechbubble input#submit {
     margin-top: 16em;

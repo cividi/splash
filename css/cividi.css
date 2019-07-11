@@ -187,10 +187,17 @@ textarea {
 #footer p {
   padding: 0 20px;
 }
+#footer .footer-box {
+  padding:0 20%;text-align:left;
+}
 
 @media only screen and (max-width: 600px) {
+
+  #footer .footer-box {
+    padding:1em;
+  }
   h1 {
-    margin-top: -2em;
+    margin-top: -1.5em;
     font-size: 4rem;
   }
   body {
@@ -222,6 +229,20 @@ textarea {
     bottom: 1px;
   }
   #speechbubble input#submit {
-    margin-top: 14em;
+    margin-top: 16em;
+  }
+
+  .content h3 {
+    margin: 2em 0; padding: 0;
+  }
+  .content {
+    padding: 1em;
+  }
+}
+
+@media only screen and (min-device-width: 812px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
   }
 }

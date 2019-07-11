@@ -14,7 +14,7 @@ Apply now via viewsource@cividi.ch
 <head>
   <meta charset="utf-8">
 
-  <title>CIVIDI</title>
+  <title>cividi</title>
   <meta name="description" content="Civic urbanism is our Hello, World">
   <meta name="author" content="SmartUse">
 
@@ -22,7 +22,6 @@ Apply now via viewsource@cividi.ch
 
   <link rel="stylesheet" href="css/reset.css?v=1.0">
   <link rel="stylesheet" href="css/cividi.css?v=1.0">
-
 </head>
 
 <body>
@@ -35,30 +34,48 @@ Apply now via viewsource@cividi.ch
 	    </div>
 			<div id="menu">
 				<ul>
-					<li><a href="#" accesskey="1" title="">About</a></li>
-	        <li><a href="#blog" accesskey="2" title="">News</a></li>
-					<li><a href="#contact" accesskey="3" title="">Contact</a></li>
-	        <li><a href="#follow" accesskey="4" title="">Follow</a></li>
+					<li><a href="#about" accesskey="1" title="Kurzinfos">About</a></li>
+	        <li><a href="https://cividi.be" accesskey="2" title="Blog" target="_blank">News</a></li>
+					<li><a href="#speechbubble" accesskey="3" title="Kontaktformular">Contact</a></li>
+	        <!-- <li><a href="https://twitter.com/civiidiii" accesskey="4" target="_blank">Follow</a></li> -->
 				</ul>
 			</div>
 		</div>
 	</div>
 
-	<div id="welcome" class="container">
+	<div id="welcome" class="content">
 		<div class="title">
-			<h2>Hello, world</h2>
+			<h2>Das Pionierprojekt <b>cividi</b> stellt mit Unterstützung des Innovationspartners Engagement Migros digitale Werkzeuge für die analoge Stadt zur Verfügung.</h2>
 		</div>
-		<p>Das Pionierprojekt Cividi stellt mit Unterstützung des Innovationspartners Engagement Migros digitale Werkzeuge für die analoge Stadt zur Verfügung.</p>
+		<img src="img/EM-cividi-urban-footprint-v2-900.jpg" width="100%">
 	</div>
 
+	<a name="about"></a>
+
+	<div class="wrapper">
+		<div class="content">
+			<p>
+				Damit Planung und Städtebau weiterhin nachhaltige und lebenswerte Städte ermöglichen können, trotz wachsender Bevölkerungszahl, zunehmendem Verkehr und der politisch geforderten Verdichtung nach Innen, müssen sie partizipativ, evidenz-basiert und smarter werden.
+			</p>
+			<h3>
+				Die Digitalisierung bietet hier neue Möglichkeiten für Analyse und Einbezug der Bevölkerung.
+			</h3>
+			<p>
+				Das Pionierprojekt <b>cividi</b> stellt mit Unterstützung des Innovationspartners Engagement Migros digitale Werkzeuge für die analoge Stadt zur Verfügung. Es will lokale Anliegen sichtbar machen und die Zivilgesellschaft in die Raumplanung miteinbeziehen. Dafür etabliert <b>cividi</b> eine Plattform für die Visualisierung und den Austausch von Daten zur Nutzung des städtischen Raumes. Die Plattform arbeitet mit Daten von Behörden und Firmen, bietet aber auch Nutzerinnen und Nutzer die Möglichkeit ihre individuellen Daten für gesellschaftliche Zwecke zur Verfügung zu stellen. Dafür wird ein kooperatives Modell zur Nutzung und Verwertung entwickelt.
+			</p>
+			<p class="invert">
+				In Zusammenarbeit mit Partnern aus Verwaltung, Akademie und Wirtschaft, erstellt <b>cividi</b> die Grundlagen dafür, dass städtische Räume und Infrastruktur partizipativ entwickelt und besser genutzt werden können, statt teuer neu gebaut werden müssen.
+			</p>
+		</div>
+	</div>
 
 <div id="speechbubble-wrapper">
   <div id="speechbubble">
     <form action="https://formspree.io/website@cividi.ch" method="POST">
     <div id="civicurbanisminput">
-      <h1>#urbanism</h1>
-  <textarea rows="3" name="quoteinput" id="quoteinput">?
-  ! </textarea>
+      <h1 id="typed"></h1>
+<textarea rows="3" name="quoteinput" id="quoteinput">?
+! </textarea>
         <input type="email" name="_replyto" placeholder="my@email.address">
       </div>
       <input type="submit" id="submit" value="> eintragen*">
@@ -68,6 +85,9 @@ Apply now via viewsource@cividi.ch
 <div id="footer" style="text-align:center"><div style="padding:0 20%;text-align:left">
     <p>* Wir respektieren deine Privatsphäre und sammeln lediglich die Antworten und behalten uns vor eine Auswahl zu einem späteren Zeitpunkt zu publizieren — Metadaten z.B. deiner Browsersession werden nicht gespeichert. Mit dem Absenden erklärst du dich damit einverstanden.</p>
 </div></div>
-  <script src="js/criterion.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha256-F6VRM94CIE3Kv2zkAtbzlViDfZ3HMaIgusIcFBPIjiU=" crossorigin="anonymous"></script>
+  <script src="js/cividi.js"></script>
 </body>
 </html>

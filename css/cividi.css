@@ -1,0 +1,305 @@
+body {
+  background-color: white;
+  font-family: 'Open Sans',"Helvetica","Arial",sans-serif;
+}
+
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Zilla Slab', serif;
+}
+h2 {
+  font-size: 2em;
+  color: #261300;
+  text-align: left;
+  line-height: 125%;
+}
+
+#logo {
+    padding: 0em 0em;
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+#logo img {
+  max-width: 50%;
+  min-width: 256px;
+}
+
+#menu {
+  text-align: center;
+}
+#menu li {
+    display: block;
+    text-align: left;
+}
+#menu ul {
+    list-style: none;
+}
+#menu img {
+  height: 1em;
+}
+#menu a:hover {
+    border: 1px solid #3C3C3C;
+    border-radius: 4px;
+}
+#menu li a, #menu li span {
+  border: 1px solid transparent;
+  display: inline-block;
+  margin-left: 0.50em;
+  padding: 1em 1.5em;
+  letter-spacing: 0.20em;
+  text-decoration: none;
+  font-size: 0.90em;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: 0;
+  color: #3C3C3C;
+  width: 225px;
+}
+
+b {
+  font-weight: bold;
+}
+.content {
+  padding: 4em;
+  color: rgba(0,0,0,0.6);
+  hyphens: auto;
+}
+.content img {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 1em;
+  width: 100%;
+}
+.primary {
+  background: #543076;
+  color: white;
+  padding: 1em;
+}
+.secondary {
+  background: #61BEBF;
+  color: white !important;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px black;
+  padding: 2em;
+  margin: 0 -2em;
+}
+.content h2 {
+  hyphens: none;
+}
+.content h3 {
+  padding: 1em;
+  font-size: 2.4em;
+  color: #543076;
+  margin: 1em -1em;
+  line-height: 125%;
+}
+.content p {
+  font-size: 1.2em;
+  line-height: 2em;
+  margin-bottom: 1em;
+}
+
+#welcome {
+  overflow: hidden;
+  text-align: center;
+  color: rgba(255,255,255,0.4);
+}
+.title {
+  margin-bottom: 3em;
+}
+#welcome .title h2 {
+  color: rgba(0,0,0,1);
+}
+
+.team {
+  text-align: center;
+}
+.team ul {
+  list-style: none;
+  margin-bottom: 10em;
+}
+.team li {
+  text-align: left;
+  list-style: none;
+  display: inline-block;
+  width: 256px;
+  height: 320px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  padding: 0em; margin: 1em;
+
+  font-size: 125%;
+  font-family: 'Zilla Slab', serif;
+}
+.team name {
+  font-weight: bold;
+  display: block;
+}
+.team span {
+  color: black;
+}
+
+.contact p {
+  line-height: normal;
+  font-size: 175%;
+}
+.contact h2 {
+  margin-bottom: 1em;
+}
+
+#speechbubble-wrapper {
+  margin: 10em 0;
+}
+#speechbubble {
+  height: 10em;
+  left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  width: 95%;
+  max-width: 900px;
+  text-align: center;
+}
+
+#civicurbanisminput {
+  background: black;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+#civicurbanisminput:after {
+  content: ''; position: absolute;
+  z-index: -1; left: 50%; width: 0; height: 0; border: 50px solid transparent; border-top-color: black; border-bottom: 0; border-left: 0; margin-left: -10px; margin-bottom: -50px;
+}
+#speechbubble h1 {
+  font-family: 'Helvetica', sans-serif;
+  position: absolute;
+  font-size: 6rem;
+  margin-top: -0.8em;
+  color: black;
+  text-shadow: 0px 0px 11px white;
+}
+
+textarea {
+  font-size: 3rem;
+  margin-top: 1em;
+  margin-bottom: -1em;
+  background: transparent;
+  color: white;
+  width: 98%;
+  border: none;
+  box-shadow: 0px 0px 50px black;
+}
+
+#speechbubble input {
+  display: block;
+  margin: 35px auto 0 auto;
+  background-color: transparent;
+  border: 0px #000;
+  /* border-bottom: 1px solid #fff; */
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+#speechbubble input#submit {
+  margin-top: 3em;
+  width: 100%;
+  border: 0;
+  color: black;
+}
+#speechbubble input#submit:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#footer {
+  width: 100%;
+  text-align: left;
+  display: block;
+  bottom: 15px;
+  top: 30em;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+#footer a {
+  text-decoration: none;
+  color: #555;
+}
+#footer a:hover {
+  color: #fff;
+}
+
+#footer p {
+  padding: 0 20px;
+}
+#footer .footer-box {
+  padding:0 20%;text-align:left;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #footer .footer-box {
+    padding:1em;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  body {
+    overflow-y: auto;
+  }
+  #civicurbanisminput {
+    position: absolute;
+  }
+  #footer {
+    z-index: -100;
+    opacity: 0.5;
+  }
+  #footer:hover {
+    z-index: 100;
+    opacity: 1;
+    background: white;
+  }
+  input#submit {
+    position: absolute;
+    margin-top: 50px;
+  }
+  textarea {
+    margin-top: 1em;
+  }
+  #speechbubble input {
+    font-size: 20px;
+  }
+  #civicurbanisminput:after {
+    bottom: 1px;
+  }
+  #speechbubble h1 {
+    font-size: 3em;
+    overflow: hidden;
+  }
+  #speechbubble input#submit {
+    margin-top: 16em;
+  }
+
+  .partner-logos img {
+    width: 90%;
+  }
+  .content h3, .content h4 {
+    margin: 2em 0; padding: 0.4em;
+  }
+  .content {
+    padding: 1em;
+  }
+}
+
+@media only screen and (min-device-width: 812px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}

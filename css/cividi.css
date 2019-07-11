@@ -1,7 +1,7 @@
 body {
   background-color: white;
   color: #999;
-  font-family: "Helvetica","Arial",sans-serif;
+  font-family: 'Open Sans',"Helvetica","Arial",sans-serif;
 }
 
 #header-wrapper {
@@ -57,10 +57,18 @@ b {
   margin-bottom: 1em;
   width: 100%;
 }
-.invert {
+.primary {
   background: #543076;
   color: white;
   padding: 1em;
+}
+.secondary {
+  background: #61BEBF;
+  color: white !important;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px black;
+  padding: 2em;
+  margin: 0 -2em;
 }
 .content h3 {
   padding: 1em;
@@ -95,6 +103,34 @@ b {
 h1, h2, h3 {
   margin: 0;
   padding: 0;
+  font-family: 'Zilla Slab', serif;
+}
+
+.team {
+  text-align: center;
+}
+.team ul {
+  list-style: none;
+  margin-bottom: 10em;
+}
+.team li {
+  text-align: left;
+  list-style: none;
+  display: inline-block;
+  width: 256px;
+  height: 320px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  padding: 0em; margin: 1em;
+
+  font-size: 125%;
+  font-family: 'Zilla Slab', serif;
+}
+.team name {
+  font-weight: bold;
+  display: block;
+}
+.team span {
+  color: black;
 }
 
 #speechbubble-wrapper {
@@ -232,8 +268,11 @@ textarea {
     margin-top: 16em;
   }
 
-  .content h3 {
-    margin: 2em 0; padding: 0;
+  .partner-logos img {
+    width: 90%;
+  }
+  .content h3, .content h4 {
+    margin: 2em 0; padding: 0.4em;
   }
   .content {
     padding: 1em;

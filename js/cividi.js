@@ -1,5 +1,5 @@
-function setCurser(){
-  document.getElementById("quoteinput").focus();
+function initialize(){
+  // document.getElementById("quoteinput").focus();
 
   var typed = new Typed('#typed', {
     strings: ["#urbanism", "#civictech", "#raumplanung", "#opendata"],
@@ -11,6 +11,7 @@ function setCurser(){
     showCursor: true,
     loop: true
   });
+
 }
 
-window.onload = setCurser;
+window.onload = initialize;

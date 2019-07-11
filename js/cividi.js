@@ -7,8 +7,7 @@ function initialize(){
     startDelay: 1000,
     backDelay: 2000,
     smartBackspace: true,
-    cursorChar: '_',
-    showCursor: true,
+    showCursor: false,
     loop: true
   });
 
